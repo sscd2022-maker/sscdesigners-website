@@ -218,6 +218,15 @@ a{color:inherit}
   *{transition:none!important}
 }
 
+/* Maa Baglamukhi emblem, top right */
+.maa{display:flex;align-items:center;gap:10px;margin-left:22px;padding-left:20px;border-left:1px solid rgba(255,255,255,.25);text-decoration:none}
+.maa img{width:46px;height:46px;border-radius:50%;border:2px solid #f2c230;object-fit:cover;box-shadow:0 0 0 3px rgba(242,194,48,.18)}
+.maa span{font:600 11.5px/1.25 var(--body);color:#f6d77a;max-width:9ch}
+.site-header.scrolled .maa,.site-header.solid .maa{border-left-color:var(--line)}
+.site-header.scrolled .maa span,.site-header.solid .maa span{color:#8a6400}
+.site-header.scrolled .maa img,.site-header.solid .maa img{width:40px;height:40px}
+.site-header .bar>.nav{margin-left:auto}
+@media(max-width:999px){.maa{margin-left:auto;padding-left:0;border-left:0;margin-right:6px}.maa span{display:none}.maa img{width:40px;height:40px}}
 /* Option A: featured project cards + about */
 .hero .wrap{padding-bottom:110px}
 .feat{position:relative;margin-top:-70px;z-index:2;padding-bottom:56px}
@@ -286,6 +295,7 @@ a{color:inherit}
       <a href="about.html">About</a>
       <a class="btn btn-primary" href="contact.html">Discuss a Project</a>
     </nav>
+    <div class="maa" title="Maa Baglamukhi. Detail of a 19th-century painting from Nepal, Los Angeles County Museum of Art (public domain)"><img src="assets/img/maa-baglamukhi.webp" alt="Maa Baglamukhi" width="46" height="46"><span>Jai Maa Baglamukhi</span></div>
     <button class="menu-btn" id="menu-open" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><svg><use href="#i-menu"/></svg></button>
   </div>
 </header>
