@@ -10,7 +10,7 @@
 <meta property="og:title" content="SS Consultants &amp; Designers | Structural Engineering Consultants, Noida">
 <meta property="og:description" content="Structural design consultancy in Noida for bridges, highway gantries, industrial plants, PEB, buildings, facades and temporary works. Chartered Engineer sign-off.">
 <meta property="og:url" content="https://sscdesigners.com/">
-<meta property="og:image" content="https://sscdesigners.com/assets/img/hero-pipe-rack.webp">
+<meta property="og:image" content="https://sscdesigners.com/assets/img/hero-hulyang-bridge.webp">
 <meta name="theme-color" content="#0b1531">
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,13 +89,13 @@ a{color:inherit}
 
 /* Hero */
 .hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden;isolation:isolate;background:var(--navy)}
-.hero-media{position:absolute;inset:0;z-index:-3;background:url("assets/img/hero-pipe-rack.webp") center 45%/cover no-repeat;animation:slowzoom 26s ease-in-out infinite alternate}
+.hero-media{position:absolute;inset:0;z-index:-3;background:url("assets/img/hero-hulyang-bridge.webp") center 60%/cover no-repeat;animation:slowzoom 26s ease-in-out infinite alternate}
 @keyframes slowzoom{from{transform:scale(1.02)}to{transform:scale(1.12) translate(-1.2%,0)}}
 .hero::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(11,21,49,.72) 0%,rgba(11,21,49,.80) 60%,rgba(11,21,49,.95) 100%)}
 @media(min-width:900px){.hero::before{background:linear-gradient(100deg,rgba(11,21,49,.96) 0%,rgba(11,21,49,.86) 46%,rgba(11,21,49,.42) 100%)}}
 .grid-motif{position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:48px 48px}
 .hero .wrap{width:100%;padding-top:130px}
-.hero h1{color:#fff;font-size:clamp(38px,7vw,78px);font-weight:700;line-height:1.03;max-width:16ch;margin-top:22px}
+.hero h1{color:#fff;font-size:clamp(36px,6vw,66px);font-weight:700;line-height:1.05;max-width:20ch;margin-top:22px}
 .hero h1 em{font-style:normal;color:var(--orange)}
 .hero .lede{margin-top:22px;font-size:clamp(17px,2vw,20px);color:#d4dbe7;max-width:60ch}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
@@ -217,6 +217,36 @@ a{color:inherit}
   .reveal.in{animation:none}
   *{transition:none!important}
 }
+
+/* Option A: featured project cards + about */
+.hero .wrap{padding-bottom:110px}
+.feat{position:relative;margin-top:-70px;z-index:2;padding-bottom:56px}
+.feat ul{list-style:none;margin:0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.feat ul{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:520px){.feat ul{grid-template-columns:1fr}}
+.feat a{display:flex;flex-direction:column;height:100%;background:var(--navy-2);color:#fff;text-decoration:none;border-bottom:3px solid var(--orange);box-shadow:var(--shadow)}
+.feat img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.feat b{display:block;padding:14px 16px 4px;font:600 16px/1.3 var(--head)}
+.feat span{display:block;padding:0 16px 16px;font-size:13.5px;color:#b7c1d4}
+.feat a:hover b{color:var(--orange-lt)}
+.about-ss .cols{display:grid;gap:40px}
+@media(min-width:900px){.about-ss .cols{grid-template-columns:1.05fr 1fr;gap:64px}}
+.about-ss p.intro{color:var(--muted);font-size:17px;margin-top:18px}
+.aim{margin-top:26px;padding:20px 22px;border-left:3px solid var(--orange);background:var(--mist)}
+.aim small{display:block;font:600 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--orange-dk)}
+.aim p{margin-top:10px;font:600 clamp(18px,2vw,21px)/1.4 var(--head);color:var(--navy)}
+.where h3{font-size:20px;margin-bottom:14px}
+.where dl{display:grid;grid-template-columns:130px 1fr;margin:0;font-size:15px;line-height:1.55}
+.where dt,.where dd{margin:0;padding:12px 0;border-top:1px solid var(--line)}
+.where dt{font-weight:600;color:var(--navy)}
+.where dd{color:var(--muted)}
+.where dl>:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+.about-ss .three{display:grid;gap:14px;margin-top:44px}
+@media(min-width:900px){.about-ss .three{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.about-ss .three div{background:var(--mist);border:1px solid var(--line);padding:22px 22px 12px}
+.about-ss .three h3{font-size:17px;margin-bottom:10px}
+.about-ss .three ul{list-style:none;margin:0;padding:0;font-size:14.5px;color:var(--muted)}
+.about-ss .three li{padding:8px 0;border-top:1px solid var(--line)}
 </style>
 
 </head>
@@ -278,22 +308,28 @@ a{color:inherit}
 
 <main id="main">
   <section class="hero on-dark" aria-labelledby="hero-title">
-    <div class="hero-media" role="img" aria-label="Steel pipe rack corridor at a refinery"></div>
+    <div class="hero-media" role="img" aria-label="165 m suspension bridge at Hulyang, Arunachal Pradesh, designed by SS"></div>
     <div class="grid-motif" aria-hidden="true"></div>
     <div class="wrap">
       <div class="eyebrow">Structural engineering consultants · Noida</div>
-      <h1 id="hero-title">Safe, buildable, approval-ready structural design. <em>On schedule.</em></h1>
-      <p class="lede">Bridges, industrial plants, steel and PEB, buildings and temporary works. Designed to code, checked by a second engineer and signed by a Chartered Engineer.</p>
+      <h1 id="hero-title">Bridges, airports, hospitals and plants. <em>Structural design for India and abroad.</em></h1>
+      <p class="lede">165 m suspension bridge at Hulyang, Arunachal Pradesh. One of 300+ projects delivered by SS Consultants &amp; Designers.</p>
       <div class="ctas">
         <a class="btn btn-primary" href="contact.html">Discuss a Project <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
         <a class="btn btn-ghost" href="projects.html">View Our Work</a>
       </div>
-      <div class="hero-stats">
-        <div><b data-count="20" data-suffix="+">20+</b><span>Years of structural design experience</span></div>
-        <div><b data-count="300" data-suffix="+">300+</b><span>Projects delivered</span></div>
-        <div><b data-count="100" data-suffix="+">100+</b><span>Clients</span></div>
-        <div><b data-count="10" data-suffix="+">10+</b><span>Engineers</span></div>
-      </div>
+    </div>
+  </section>
+
+
+  <section class="feat" aria-label="Featured projects">
+    <div class="wrap">
+      <ul>
+        <li><a href="projects.html"><img src="assets/img/card-amravati.webp" alt="Amravati Airport passenger terminal" width="640" height="360" loading="lazy"><b>Amravati Airport terminal &amp; ATC</b><span>110 m &#215; 120 m steel terminal</span></a></li>
+        <li><a href="projects.html"><img src="assets/img/card-tezu.webp" alt="Tezu Airport, Arunachal Pradesh" width="640" height="360" loading="lazy"><b>Tezu Airport, Arunachal</b><span>Terminal, ATC tower and facade</span></a></li>
+        <li><a href="projects.html"><img src="assets/img/card-hospital-kkd.webp" alt="Cancer hospital, Karkardooma, Delhi" width="640" height="360" loading="lazy"><b>Cancer hospital, Delhi</b><span>2B + G+4, 50,000+ sq.ft</span></a></li>
+        <li><a href="projects.html"><img src="assets/img/card-guwahati-hostel.webp" alt="Girls hostel, Guwahati Medical College" width="640" height="360" loading="lazy"><b>Guwahati Medical College</b><span>G+8 hostel, seismic zone V</span></a></li>
+      </ul>
     </div>
   </section>
 
@@ -389,6 +425,32 @@ a{color:inherit}
         <div class="why-item reveal"><h3>Independent check before issue</h3><p>A second engineer checks the model, member utilisation, connections and foundations against the design basis report.</p></div>
         <div class="why-item reveal"><h3>Built for site</h3><p>Sections, connections and details chosen for fabrication and erection, not only for the calculation.</p></div>
         <div class="why-item reveal"><h3>Agreed programme</h3><p>Deliverables and dates fixed at the start, with two design revisions included in the fee.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-ss" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h2 id="about-title" style="font-size:clamp(28px,4.2vw,42px)">About SS</h2>
+          <p class="intro">SS Consultants &amp; Designers is a structural and civil design office in Sector 63, Noida, led by Er. Gaurav Sharma, Chartered Engineer (Regn. M-1854091), with about 20 years in structural design. Structural and highway engineers, draftsmen, quantity surveyors, architects and a 3D modeller work together in one office, so a project goes from DBR to GFC drawings and BOQ without changing hands.</p>
+          <div class="aim"><small>Our aim</small><p>To be the best structural design office for contractors and consultants, in India and abroad: drawings that clear review the first time and structures that get built without redesign.</p></div>
+        </div>
+        <div class="where">
+          <h3>Where we work</h3>
+          <dl>
+            <dt>India</dt><dd>Delhi NCR, Uttar Pradesh, Haryana, Gujarat, Madhya Pradesh, Rajasthan, Chhattisgarh, Karnataka, Assam, Arunachal Pradesh and Nagaland</dd>
+            <dt>Dubai</dt><dd>VMS, VSDS and ITS gantries and poles as design partner to SICE</dd>
+            <dt>Nepal</dt><dd>Steel dome structure, Bandipur, Tanahun</dd>
+            <dt>UAE, KSA, US</dt><dd>Analysis, drawings and BOQ for consultants, sealed by their local engineer of record. <a href="international.html">International work</a></dd>
+          </dl>
+        </div>
+      </div>
+      <div class="three">
+        <div><h3>Who we work for</h3><ul><li>EPC contractors</li><li>Engineering consultants and architects</li><li>Government authorities</li><li>Plant and factory owners</li></ul></div>
+        <div><h3>What you receive</h3><ul><li>Design basis report (DBR)</li><li>STAAD.Pro model and design report</li><li>GFC and fabrication drawings</li><li>BOQ and quantity take-off</li><li>Chartered Engineer certificates</li></ul></div>
+        <div><h3>How every package is checked</h3><ul><li>DBR agreed before modelling</li><li>Second-engineer check of model and foundations</li><li>Revision control from R0</li><li>External vetting by IIT Roorkee or NIT Kurukshetra where required</li></ul></div>
       </div>
     </div>
   </section>
